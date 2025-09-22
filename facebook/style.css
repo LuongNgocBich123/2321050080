@@ -1,0 +1,81 @@
+body {
+    margin:0;
+    background-color: rgb(209, 207, 207);
+}
+.noidung {
+  display: flex;               /* cho 2 khối con xếp ngang */
+  justify-content: space-between; /* đẩy hai bên xa nhau */
+  align-items: center;          /* căn giữa theo chiều dọc */
+  padding: 400px;                /* khoảng cách bên trong */
+}
+.container {
+    display: flex;
+    background-color: white;
+    height: 250px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+    margin:20px auto;
+}
+.noidung-phai {
+  width: 200px;           /* chỉnh theo ý */
+  padding: 20px; /*căn chỉnh trong khung*/
+  background: white;
+  border-radius: 10px;  
+}
+.noidung-trai {
+    width: 50%;
+    padding: 20px;  
+    margin-top: 60px;
+}
+.tieude {
+    color: rgb(22, 113, 170);
+    font-size: xxx-large;
+    display: flex;
+}
+.baiviet {
+    font-size: large;
+}
+.noidung-phai-tren input {
+  width: 100%;               /* rộng hết khung */
+  padding: 10px;             /* khoảng cách trong */
+  font-size: 14px;           /* chữ vừa */
+  border: 1px solid;    /* viền xám nhẹ */
+  border-radius: 6px;        /* bo góc */
+   /* để padding không vượt width */            
+}
+.khoi-nut {
+  margin-bottom: 12px; /* khoảng cách giữa các ô */ 
+}
+.login {
+    width: 110%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+}
+a {
+    color:blue;
+    margin-left:auto;
+}
+a:hover {
+    text-decoration: underline;
+}
+hr {
+    width: 220px;
+}
+.account {
+    background-color: rgb(33, 136, 33);
+    border: 0px solid;
+    color: white;
+    margin-left: 20px;
+  
+}
+.noidung-phai-duoi {
+    width: center;
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(33, 136, 33);
+}

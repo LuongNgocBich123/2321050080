@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>facebook</h1>
+    </header>
+
+    <!-- MAIN / FORM -->
+    <main>
+        <div class="signup-form">
+            <h2>Create Account</h2>
+            <p class="subtitle">It's quick and easy.</p>
+
+            <form>
+                <!-- Họ và tên -->
+                <div class="name-fields">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Surname">
+                </div>
+
+                <!-- Ngày sinh -->
+                <div class="birthday-fields">
+                    <select>
+                        <option selected disabled>Day</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <!-- ... -->
+                    </select>
+                    <select>
+                        <option selected disabled>Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <!-- ... -->
+                    </select>
+                    <select>
+                        <option selected disabled>Year</option>
+                        <option>2025</option>
+                        <option>2024</option>
+                        <!-- ... -->
+                    </select>
+                </div>
+
+                <!-- Giới tính -->
+                <div class="gender-fields">
+                    <label><input type="radio" name="gender"> Female</label>
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Custom</label>
+                </div>
+
+                <!-- Email / SĐT và mật khẩu -->
+                <input type="text" placeholder="Mobile number or email">
+                <input type="password" placeholder="New password">
+
+                <!-- Thông tin thêm -->
+                <p class="disclaimer">
+                    People who can exercise may have uploaded your contact info. <a href="#">Learn more</a>.
+                </p>
+
+                <p class="terms">
+                    By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookies Policy</a>.
+                </p>
+
+                <!-- Nút đăng ký -->
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+
+            <p class="login-link">Already have an account?</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Facebook – Liên hệ | Chính sách
+    </footer>
+
+</body>
+</html>
