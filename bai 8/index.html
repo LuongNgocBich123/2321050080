@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<body>
+    <script>
+        let thongTinDonHang = {
+            maDonHang: "12345678",
+            thongTinKhachHang: {
+                hoTen: "Nbich",
+                soDienThoai: "0965547024",
+                trangThaiThanhVienThanThiet: false,
+            },
+            danhSachSanPham: {
+                sp01: {
+                    maSanPham: "1",
+                    tenSanPham: "Matcha",
+                    soLuong: 10,
+                    giaTien: "10000",
+                },
+                sp02: {
+                    maSanPham: "2",
+                    tenSanPham: "Cà phê",
+                    soLuong: 10,
+                    giaTien: "20000",
+                },
+                sp03: {
+                    maSanPham: "3",
+                    tenSanPham: "Trà sữa",
+                    soLuong: 15,
+                    giaTien: "20000",
+                }
+            },
+            thanhToanThanhCong: true,
+            diaChiGiaoHang: "Cầu Diễn"
+        }
+        
+        let tongSP1 = thongTinDonHang.danhSachSanPham.sp01.giaTien * thongTinDonHang.danhSachSanPham.sp01.soLuong;
+        let tongSP2 = thongTinDonHang.danhSachSanPham.sp02.giaTien * thongTinDonHang.danhSachSanPham.sp02.soLuong;
+        let tongSP3 = thongTinDonHang.danhSachSanPham.sp03.giaTien * thongTinDonHang.danhSachSanPham.sp03.soLuong;
+
+        let tongTien = tongSP1 + tongSP2 + tongSP3;
+
+        //document.writeln("Độ dài của mã đơn hàng = " + thongTinDonHang.maDonHang.length);
+        // length đêm kí tự của chuỗi
+        // toLOWERCASE VIẾT THƯỜNG 
+        // indexOf TRẢ ra vị trí xuất hiện đàu tiên
+        // nếu cón: vị trí , nếu không :-1
+       var myString = "Hello Bích";
+        // length đếm kí tự chuỗi
+        //document.writeln(myString[4]);
+        // Cắt chuỗi
+        //document.writeln(myString.slice(1,4));
+        //document.writeln(myString.replace( "Hello", "Hello,"));
+        //document.writeln(myString.toLowerCase()); // viết thường hết
+        //indexOf trả ra vị trí xuất hiện đầu tiên, nếu có : vị trí, nếu k: -1
+        //document.writeln(myString.indexOf('e'));
+        //document.writeln(myString.includes('e')); // có true, k false
+        //tách chuỗi thành mảng
+        document.writeln(myString.split(' '));
+
+        let danhSach = [ "Phạm Tiệp Anh" , "Nguyễn Tiến Bách" , "Lương Ngọc Bích" ,"Nguyễn Thành Danh"]
+        document.writeln(danhSach[1].startsWith("Nguyễn"));
+
+        // chuyển chuỗi về số
+        let so = "123";
+        document.writeln(typeof (so));
+        document.writeln(typeof (Number(so)));
+        // toFixed() định dạng số với số chữ số thập phân nhất định
+        
+        var pi = "3.1234";
+        pi.toFied(2);
+        //kiểm tra số
+        // isNaN() kiểm tra xem 1 giá trị có phải là NaN hay khong (not a number)
+        // isFinite() kiểm tra xem 1 giá trị có phải là số hữu hạn hay không
+
+        isNaN(NaN);//TRUE
+        isFinite(NaN); //true
+
+        //Date
+        let today = new Date('');
+        document.writeln(toDay.getMonth); //ngày hôm nay
+
+        
+
+    </script>
+</body>
+</html>
