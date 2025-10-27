@@ -79,4 +79,7 @@ a {
     bottom: 0;
     background-color: black;
 }
+p:hover {
+    text-decoration: underline;
+}
 
