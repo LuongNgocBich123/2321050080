@@ -4,13 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="chi-so">
-        <h2>Máy tính chỉ số BMI</h2>
-        <img src="beocapdo1.png" alt="ảnh minh họa" width="200px" height="400px">
-        <input type="number" name="cannag" placeholder="Nhập cân nặng (kg)">
-        <input type="number" name="chieucao" placeholder="Nhập chiều  (cm)">
+    <div class="container">
+        <h1>Tính chỉ số BMI</h1>
+        <input type="number" name="" id="can" placeholder="Cân nặng(kg)">
+        <br>
+        <input type="number" name="" id="cao" placeholder="Chiều cao(m)">
+        <br>
+        <button onclick="caculateBMI()">Tính BMI</button>
+        <br>
+        <input type="text" value="" id="bmiI" placeholder="Kết quả BMI">
+        <br>
+         <img id="anh" src="" alt="">
     </div>
+    <!-- <div >
+        <img id="anh" src="" alt="">
+    </div> -->
+    <script>
+        const caculateBMI = () => {
+    let kg = document.getElementById("can").value;
+    let m = document.getElementById("cao").value;
+
+    kg = parseFloat(kg);
+    m = parseFloat(m);
+
+    if (isNaN(kg) || isNaN(m) || kg <= 0 || m <= 0) {
+        alert("Vui lòng nhập đúng cân nặng và chiều cao (số dương).");
+        return;
+    }
+
+    let bmi = kg / (m * m);
+    document.getElementById("bmiI").value = bmi.toFixed(2);
+
+    const img = document.getElementById("anh");
+
+   if (bmi < 18.5) {
+        img.src = "./thieu.png"
+    } else if (bmi < 24.9) {
+        img.src = "./binhthuong.png";
+    } else if (bmi < 29.9) {
+        img.src = "./thua.png";
+    } else if (bmi < 39.9) {
+        img.src = "./beocapdo1.png";
+    } else {
+        img.src = "./beonang.png";
+    }
+};
+    </script>
 </body>
 </html>
